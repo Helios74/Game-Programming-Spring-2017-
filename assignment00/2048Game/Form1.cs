@@ -118,7 +118,7 @@ namespace _2048Game
                 toy = rnd.Next(0, 4);
                 if (board[tox, toy] == 0)
                 {
-                    board[tox, toy] = rnd.Next(1, 2) * 2;
+                    board[tox, toy] = rnd.Next(1, 3) * 2;
                     tofind -= 1;
                 }
             }
