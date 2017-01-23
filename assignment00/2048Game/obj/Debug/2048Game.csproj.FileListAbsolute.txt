@@ -1,0 +1,8 @@
+c:\users\josep\onedrive\documents\visual studio 2015\Projects\2048Game\2048Game\bin\Debug\2048Game.exe.config
+c:\users\josep\onedrive\documents\visual studio 2015\Projects\2048Game\2048Game\bin\Debug\2048Game.exe
+c:\users\josep\onedrive\documents\visual studio 2015\Projects\2048Game\2048Game\bin\Debug\2048Game.pdb
+c:\users\josep\onedrive\documents\visual studio 2015\Projects\2048Game\2048Game\obj\Debug\_2048Game.Properties.Resources.resources
+c:\users\josep\onedrive\documents\visual studio 2015\Projects\2048Game\2048Game\obj\Debug\2048Game.csproj.GenerateResource.Cache
+c:\users\josep\onedrive\documents\visual studio 2015\Projects\2048Game\2048Game\obj\Debug\2048Game.exe
+c:\users\josep\onedrive\documents\visual studio 2015\Projects\2048Game\2048Game\obj\Debug\2048Game.pdb
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\2048Game\2048Game\obj\Debug\2048Game.csprojResolveAssemblyReference.cache
