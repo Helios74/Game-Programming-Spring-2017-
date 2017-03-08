@@ -103,6 +103,10 @@ namespace WindowsFormsApplication2
 
         public virtual void act(int l, int h)
         {
+            foreach (Sprite s in children)
+            {
+                s.act(l,h);
+            }
         }
 
         public void add(Sprite s)

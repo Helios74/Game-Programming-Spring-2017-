@@ -16,16 +16,18 @@ namespace WindowsFormsApplication2
         public static Form form;
         public static Thread UpdateT;
         public static Thread RenderT;
-        public static List<Sprite> sprites = new List<Sprite>();
+        public static int lwidth;
+        public static int lheight;
         public static Sprite canvas = new Sprite();
-        Pic Ring = new Pic(Properties.Resources.ring,0);
+        Background Ring = new Background(Properties.Resources.ring,0);
         Pic Tyson = new Pic(Properties.Resources.tyson1,0);
         Pic Kaiser = new Pic(Properties.Resources.kaiser,180);
         public static int fps = 60;
-        public static double runningFPS = 60.0;
 
         public Form1()
         {
+            lwidth = ClientSize.Width;
+            lheight = ClientSize.Height;
             InitializeComponent();
             DoubleBuffered = true;
             form = this;
@@ -44,8 +46,6 @@ namespace WindowsFormsApplication2
             canvas.add(Ring);
             canvas.add(Tyson);
             canvas.add(Kaiser);
-            sprites.Add(Tyson);
-            sprites.Add(Kaiser);
             UpdateT = new Thread(new ThreadStart(move));
             UpdateT.Start();
             RenderT = new Thread(new ThreadStart(run));
@@ -56,16 +56,18 @@ namespace WindowsFormsApplication2
         {
             Ring.Width = ClientSize.Width;
             Ring.Height = ClientSize.Height;
-            Tyson.CornerX = ClientSize.Width / 2;
-            Tyson.CornerY = ClientSize.Height / 4;
-            Kaiser.CornerX = ClientSize.Width / 2;
-            Kaiser.CornerY = 3 * ClientSize.Height / 4;
+            Tyson.CornerX += (ClientSize.Width - lwidth);
+            Tyson.CornerY += (ClientSize.Height - lheight);
+            Kaiser.CornerX += (ClientSize.Width - lwidth);
+            Kaiser.CornerY += (ClientSize.Height-lheight);
             Ring.Width = ClientSize.Width;
             Ring.Height = ClientSize.Height;
             Tyson.Width = ClientSize.Width / 8;
             Tyson.Height = ClientSize.Height / 8;
             Kaiser.Width = ClientSize.Width / 8;
             Kaiser.Height = ClientSize.Height / 8;
+            lheight = ClientSize.Height;
+            lwidth = ClientSize.Width;
         }
 
         protected override void OnResize(EventArgs e)
@@ -76,11 +78,22 @@ namespace WindowsFormsApplication2
 
         public static void move()
         {
-            while(true)
+            while (true)
             {
-                foreach (Pic k in sprites)
+                DateTime last = DateTime.Now;
+                DateTime now = last;
+                TimeSpan frameTime = new TimeSpan(10000000 / fps);
+                while (true)
                 {
-                    k.act(form.ClientSize.Width, form.ClientSize.Height);
+                    DateTime tem = DateTime.Now;
+                    now = tem;
+                    TimeSpan diff = now - last;
+                    if (diff.TotalMilliseconds < frameTime.TotalMilliseconds)
+                    {
+                        Thread.Sleep((frameTime - diff).Milliseconds);
+                    }
+                    last = DateTime.Now;
+                    canvas.act(form.ClientSize.Width, form.ClientSize.Height);
                 }
             }
         }
@@ -95,7 +108,6 @@ namespace WindowsFormsApplication2
                 while (true)
                 {
                     DateTime tem = DateTime.Now;
-                    runningFPS = 0.9 * runningFPS + 0.1 * (1000.0 / (tem - now).TotalMilliseconds);
                     now = tem;
                     TimeSpan diff = now - last;
                     if (diff.TotalMilliseconds < frameTime.TotalMilliseconds)

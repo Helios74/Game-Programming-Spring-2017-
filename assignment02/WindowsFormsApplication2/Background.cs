@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApplication2
 {
-    public class Pic:Sprite
+    class Background:Sprite
     {
         public float theta;
         public bool reverse = false;
@@ -29,7 +29,7 @@ namespace WindowsFormsApplication2
             set { cornerY = value; }
         }
 
-        public Pic(Image image, int offset)
+        public Background(Image image, int offset)
         {
             this.Image = image;
             this.cornerX = .5f;
@@ -44,24 +44,6 @@ namespace WindowsFormsApplication2
 
         public override void act(int length, int width)
         {
-            if(reverse == false)
-            {
-                theta += 0.1F;
-            }
-            else
-            {
-                theta -= 0.1F;
-            }
-            if(Math.Abs((Math.PI/2)-theta) < 0.1)
-            {
-                reverse = true;
-            }
-            else if(Math.Abs(0 - theta) < 0.1)
-            {
-                reverse = false;
-            }
-            CornerX = width/2+(float)(50 * Math.Cos(theta+Offset));
-            CornerY = length/2+(float)(50 * Math.Sin(theta+Offset));
             foreach (Sprite s in children)
             {
                 s.act(length, width);
@@ -69,3 +51,4 @@ namespace WindowsFormsApplication2
         }
     }
 }
+
