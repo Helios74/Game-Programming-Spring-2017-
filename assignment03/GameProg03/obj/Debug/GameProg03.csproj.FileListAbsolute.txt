@@ -1,0 +1,8 @@
+c:\users\josep\onedrive\documents\visual studio 2015\Projects\GameProg03\GameProg03\bin\Debug\GameProg03.exe.config
+C:\Users\josep\onedrive\documents\visual studio 2015\Projects\GameProg03\GameProg03\bin\Debug\GameProg03.exe
+C:\Users\josep\onedrive\documents\visual studio 2015\Projects\GameProg03\GameProg03\bin\Debug\GameProg03.pdb
+C:\Users\josep\onedrive\documents\visual studio 2015\Projects\GameProg03\GameProg03\obj\Debug\GameProg03.csprojResolveAssemblyReference.cache
+C:\Users\josep\onedrive\documents\visual studio 2015\Projects\GameProg03\GameProg03\obj\Debug\GameProg03.Properties.Resources.resources
+C:\Users\josep\onedrive\documents\visual studio 2015\Projects\GameProg03\GameProg03\obj\Debug\GameProg03.csproj.GenerateResource.Cache
+C:\Users\josep\onedrive\documents\visual studio 2015\Projects\GameProg03\GameProg03\obj\Debug\GameProg03.exe
+C:\Users\josep\onedrive\documents\visual studio 2015\Projects\GameProg03\GameProg03\obj\Debug\GameProg03.pdb
