@@ -46,16 +46,16 @@ namespace GameProg03
 
         public override void act()
         {
-            Console.WriteLine(TargetY);
-            Console.WriteLine(TargetX);
             if (TargetX > 1920 || TargetX < -1920) TargetX = Math.Sign(TargetX) * 1920;
             if (TargetY > 1080 || TargetY < -1080) TargetY = Math.Sign(TargetY) * 1080;
             float dx = TargetX - X;
             if (distx == 0) distx = dx;
             float dy = TargetY - Y;
             if (disty == 0) disty = dy;
-            float xchange = dx / distx;
-            float ychange = dy / disty;
+            Console.WriteLine(dx);
+            Console.WriteLine(dy);
+            float xchange = Math.Abs(dx / distx);
+            float ychange = Math.Abs(dy / disty);
             if (Math.Abs(dx) > Velocity) X += Math.Sign(dx) * (xchange*velocity);
             else
             {
