@@ -40,25 +40,21 @@ namespace GameProg03
                 if (e.KeyCode == Keys.Left)
                 {
                     pac.TargetX -= 30;
-                    pac.Image = Properties.Resources.newpac2;
                     musicspace();
                 }
                 if (e.KeyCode == Keys.Right)
                 {
                     pac.TargetX += 30;
-                    pac.Image = Properties.Resources.newpac;
                     musicspace();
                 }
                 if (e.KeyCode == Keys.Up)
                 {
                     pac.TargetY -= 30;
-                    pac.Image = Properties.Resources.newpac3;
                     musicspace();
                 }
                 if (e.KeyCode == Keys.Down)
                 {
                     pac.TargetY += 30;
-                    pac.Image = Properties.Resources.newpac4;
                     musicspace();
                 }
             }
