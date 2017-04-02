@@ -1,0 +1,8 @@
+c:\users\josep\onedrive\documents\visual studio 2015\Projects\SokubanAssignment04\SokubanAssignment04\bin\Debug\SokubanAssignment04.exe.config
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\SokubanAssignment04\SokubanAssignment04\bin\Debug\SokubanAssignment04.exe
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\SokubanAssignment04\SokubanAssignment04\bin\Debug\SokubanAssignment04.pdb
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\SokubanAssignment04\SokubanAssignment04\obj\Debug\SokubanAssignment04.csprojResolveAssemblyReference.cache
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\SokubanAssignment04\SokubanAssignment04\obj\Debug\SokubanAssignment04.Properties.Resources.resources
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\SokubanAssignment04\SokubanAssignment04\obj\Debug\SokubanAssignment04.csproj.GenerateResource.Cache
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\SokubanAssignment04\SokubanAssignment04\obj\Debug\SokubanAssignment04.exe
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\SokubanAssignment04\SokubanAssignment04\obj\Debug\SokubanAssignment04.pdb
