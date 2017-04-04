@@ -1,5 +1,12 @@
-wwwww
-w c w
-w  bw
-w g w
-wwwww
+B
+wwwwww
+w c  w
+w  b w
+w g  w
+wwwwww
+B
+wwwwww
+w    w
+w  bcw
+w g  w
+wwwwww

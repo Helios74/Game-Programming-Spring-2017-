@@ -108,8 +108,9 @@ namespace SokubanAssignment04
         public virtual void act()
         {
             foreach (Sprite s in children)
-            { 
+            {
                 s.act();
+                
             }
         }
 

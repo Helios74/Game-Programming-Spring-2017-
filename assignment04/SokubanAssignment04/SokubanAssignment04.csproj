@@ -58,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SlideSprite.cs" />
     <Compile Include="Sprite.cs" />
+    <Compile Include="TextSprite.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -88,22 +89,25 @@
     <None Include="Resources\NewWinBlock.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PushBlock.png" />
+    <None Include="Resources\person.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Win.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Wall.png" />
+    <None Include="Resources\SokubanMaps.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\GoalBlock.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\person.png" />
+    <None Include="Resources\Win.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SokubanMaps.txt" />
+    <None Include="Resources\PushBlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WinScreen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

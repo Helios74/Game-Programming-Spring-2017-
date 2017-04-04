@@ -91,14 +91,13 @@ namespace SokubanAssignment04.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GWBbC
-        ///
-        ///Level1 
-        ///WWWWWWW
-        ///W C   W
-        ///W  b  W
-        ///W G   W
-        ///WWWWWWW.
+        ///   Looks up a localized string similar to B
+        ///wwwwww
+        ///w c  w
+        ///w  b w
+        ///w g  w
+        ///wwwwww
+        ///E.
         /// </summary>
         internal static string SokubanMaps {
             get {
@@ -122,6 +121,16 @@ namespace SokubanAssignment04.Properties {
         internal static System.Drawing.Bitmap Win {
             get {
                 object obj = ResourceManager.GetObject("Win", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WinScreen {
+            get {
+                object obj = ResourceManager.GetObject("WinScreen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

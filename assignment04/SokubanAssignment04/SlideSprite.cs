@@ -16,11 +16,13 @@ namespace SokubanAssignment04
             this.Image = image;
             this.X = (float)newx;
             this.Y = (float)newy;
-            this.Width = 200;
-            this.Height = 200;
+            this.TargetX = (float)newx;
+            this.TargetY = (float)newy;
+            this.Width = 100;
+            this.Height = 100;
         }
 
-        private float targetx = 0;
+        private float targetx;
 
         public float TargetX
         {
@@ -28,7 +30,7 @@ namespace SokubanAssignment04
             set { targetx = value; }
         }
 
-        private float targety = 0;
+        private float targety;
 
         public float TargetY
         {
@@ -36,7 +38,7 @@ namespace SokubanAssignment04
             set { targety = value; }
         }
 
-        private float velocity;
+        private float velocity = 30;
 
         public float Velocity
         {
@@ -45,7 +47,7 @@ namespace SokubanAssignment04
         }
 
         public override void act()
-        { 
+        {
             float dx = TargetX - X;
             if (distx == 0) distx = dx;
             float dy = TargetY - Y;
@@ -68,7 +70,7 @@ namespace SokubanAssignment04
 
         public override void paint(Graphics g)
         {
-            g.DrawImage(this.Image, new Rectangle((int)(0 - Width / 2), (int)(0 - Height / 2), (int)Width, (int)Height));
+            g.DrawImage(this.Image, new Rectangle(0, 0, (int)Width, (int)Height));
         }
     }
 }
