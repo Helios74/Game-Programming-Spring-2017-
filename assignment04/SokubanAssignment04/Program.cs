@@ -15,8 +15,12 @@ namespace SokubanAssignment04
         public static SlideSprite[,] blocks;
         public static SlideSprite winscreen = new SlideSprite(Properties.Resources.WinScreen, 0, 0);
         public static TextSprite movecount;
+        public static TextSprite movetitle;
+        public static TextSprite record;
+        public static TextSprite recordtitle;
         public static int[] Widths;
         public static int[] Heights;
+        public static int[] records;
         public static int wid;
         public static int hei;
         public static int x;
@@ -67,6 +71,10 @@ namespace SokubanAssignment04
                 winscreen.Width = wid*100.0F;
                 winscreen.Height = hei*100.0F;
                 Program.canvas.add(winscreen);
+                if(moves < records[onlevel%levels.Length])
+                {
+                    records[onlevel % levels.Length] = moves;
+                }
                 win = true;
                 onlevel += 1;
             }
@@ -131,12 +139,14 @@ namespace SokubanAssignment04
             levels = new String[numlevels][];
             Widths = new int[numlevels];
             Heights = new int[numlevels];
+            records = new int[numlevels];
             for (int i = 0; i < numlevels; i++)
             {
                 String[] lines = all[i].Split(new string[] { "\n", "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
                 Widths[i] = lines[0].Length;
                 Heights[i] = lines.Length;
                 levels[i] = lines;
+                records[i] = 1000;
             }
         }
 
@@ -183,8 +193,17 @@ namespace SokubanAssignment04
                     if (blocks[i, j] != null) Program.canvas.add(blocks[i, j]);
                 }
             Program.canvas.add(character);
-            movecount = new TextSprite(moves.ToString(), 50, 50);
+            movecount = new TextSprite(moves.ToString(), 25, 25);
             Program.canvas.add(movecount);
+            movetitle = new TextSprite("Moves", 25, 15);
+            Program.canvas.add(movetitle);
+            recordtitle = new TextSprite("Record", 60, 15);
+            Program.canvas.add(recordtitle);
+            if (records[onlevel%levels.Length] != 1000)
+            {
+                record = new TextSprite(records[onlevel%levels.Length].ToString(), 60, 25);
+                Program.canvas.add(record);
+            }
         }
 
         /// <summary>

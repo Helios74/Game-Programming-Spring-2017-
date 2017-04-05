@@ -97,7 +97,12 @@ namespace SokubanAssignment04.Properties {
         ///w  b w
         ///w g  w
         ///wwwwww
-        ///E.
+        ///B
+        ///wwwwww
+        ///w    w
+        ///w  bcw
+        ///w g  w
+        ///wwwwww.
         /// </summary>
         internal static string SokubanMaps {
             get {
