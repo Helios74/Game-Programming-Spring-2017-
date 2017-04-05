@@ -10,3 +10,9 @@ w    w
 w  bcw
 w g  w
 wwwwww
+B
+wwwwwwwww
+wg  b c w
+www  b bw
+wg      w
+wwwwwwwww

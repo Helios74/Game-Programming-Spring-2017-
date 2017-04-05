@@ -28,8 +28,6 @@ namespace SokubanAssignment04
             System.Drawing.Font drawFont = new System.Drawing.Font("Arial", 16);
             System.Drawing.SolidBrush drawBrush = new System.Drawing.SolidBrush(System.Drawing.Color.Black);
             System.Drawing.StringFormat drawFormat = new System.Drawing.StringFormat();
-            Console.WriteLine(Y);
-            Console.WriteLine(X);
             g.DrawString(text, drawFont, drawBrush, X, Y, drawFormat);
         }
 

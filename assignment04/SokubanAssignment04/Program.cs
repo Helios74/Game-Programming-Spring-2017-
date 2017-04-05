@@ -63,6 +63,7 @@ namespace SokubanAssignment04
                 Program.canvas.children.Clear();
                 int val = onlevel % levels.Length;
                 display(levels[val], Widths[val], Heights[val]);
+                fixScale();
                 moves = 0;
                 movecount.Text = moves.ToString();
             }
@@ -129,7 +130,9 @@ namespace SokubanAssignment04
 
         private void fixScale()
         {
-            canvas.Scale = Math.Min(ClientSize.Width, ClientSize.Height) / (Math.Min(wid, hei) * 100.0F);
+            canvas.Scale = Math.Min(ClientSize.Width, ClientSize.Height) / (Math.Max(wid, hei) * 100.0F);
+            canvas.X = (ClientSize.Width / 2) - (wid * 100.0F * canvas.Scale / 2);
+            canvas.Y = (ClientSize.Height / 2) - (hei * 100.0F * canvas.Scale / 2);
         }
 
         public static void readin()
