@@ -1,0 +1,8 @@
+c:\users\josep\onedrive\documents\visual studio 2015\Projects\assignment05\assignment05\bin\Debug\assignment05.exe.config
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\assignment05\assignment05\bin\Debug\assignment05.exe
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\assignment05\assignment05\bin\Debug\assignment05.pdb
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\assignment05\assignment05\obj\Debug\assignment05.csprojResolveAssemblyReference.cache
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\assignment05\assignment05\obj\Debug\assignment05.Properties.Resources.resources
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\assignment05\assignment05\obj\Debug\assignment05.csproj.GenerateResource.Cache
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\assignment05\assignment05\obj\Debug\assignment05.exe
+C:\Users\josep\OneDrive\Documents\Visual Studio 2015\Projects\assignment05\assignment05\obj\Debug\assignment05.pdb
